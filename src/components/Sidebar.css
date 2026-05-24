@@ -1,0 +1,130 @@
+.sidebar {
+  width: 300px;
+  height: 100vh;
+
+  background: linear-gradient(180deg, #020617, #1e3a8a);
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 25px 20px;
+  box-sizing: border-box;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sidebar-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+
+  border-radius: 20px;
+  margin-bottom: 15px;
+
+  background: white;
+  padding: 10px;
+}
+
+.logo h1 {
+  font-size: 38px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.studio-name {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+
+  padding: 14px 18px;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  background: rgba(255,255,255,0.12);
+  color: white;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px;
+
+  background: rgba(255,255,255,0.08);
+
+  border-radius: 15px;
+}
+
+.user-avatar {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background: white;
+  color: #1e3a8a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+.user-box h4 {
+  margin: 0;
+}
+
+.user-box p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+.logo h1 {
+  font-size: 52px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.user-box {
+  margin-top: auto;
+}
+
+.menu a.active {
+  background: rgba(59,130,246,0.25);
+  border-left: 4px solid #3b82f6;
+  color: white;
+}

@@ -1,0 +1,193 @@
+.inventory-page{
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(180deg,#020617,#071938);
+
+  color: white;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.inventory-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.inventory-header h1{
+  font-size: 42px;
+  margin: 0;
+}
+
+.inventory-header p{
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* BUTTON */
+
+.add-item-btn{
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 22px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.add-item-btn:hover{
+  background: #3b82f6;
+}
+
+/* STATS */
+
+.inventory-stats{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  gap: 24px;
+
+  margin-bottom: 30px;
+}
+
+.inventory-card{
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  padding: 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  transition: 0.3s;
+}
+
+.inventory-card:hover{
+  transform: translateY(-4px);
+}
+
+.inventory-card svg{
+  font-size: 34px;
+  color: #3b82f6;
+}
+
+.inventory-card h3{
+  margin: 0;
+  font-size: 28px;
+}
+
+.inventory-card p{
+  margin-top: 4px;
+  color: #94a3b8;
+}
+
+/* TABLE */
+
+.inventory-table{
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  padding: 18px;
+
+  overflow: hidden;
+}
+
+.inventory-table table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table th{
+  text-align: left;
+
+  padding: 22px 18px;
+
+  color: #cbd5e1;
+
+  font-size: 15px;
+
+  background: rgba(255,255,255,0.02);
+}
+
+.inventory-table td{
+  padding: 22px 18px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+
+  color: #e2e8f0;
+}
+
+/* STATUS */
+
+.status{
+  padding: 8px 14px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.available{
+  background: rgba(34,197,94,0.2);
+  color: #22c55e;
+}
+
+.low{
+  background: rgba(234,179,8,0.2);
+  color: #facc15;
+}
+
+/* ACTIONS */
+
+.actions{
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn{
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.edit-btn{
+  background: #2563eb;
+}
+
+.delete-btn{
+  background: #dc2626;
+}
+
+.edit-btn:hover,
+.delete-btn:hover{
+  transform: scale(1.08);
+}
